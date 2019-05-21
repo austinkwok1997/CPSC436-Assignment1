@@ -36,6 +36,10 @@ button.red {
     background-color: lightcoral;
 }
 
+body{
+    background-color: lightgoldenrodyellow;
+}
+
 @media only screen and (max-width: 600px) {
     .navbar {
         text-align: center;
@@ -69,6 +73,10 @@ button.red {
 
 .navbar > span > a:hover {
     background-color: green;
+}
+
+.message:hover {
+    background-color: lightgreen;
 }
 
 .text-center{
