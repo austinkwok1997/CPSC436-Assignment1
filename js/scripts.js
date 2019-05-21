@@ -8,6 +8,7 @@ for (i = 0; i < jsonObj.messages.length; i++) {
     var message = document.createElement("DIV");
     message.innerHTML = jsonObj.messages[i];
     message.classList.add("message")
+    message.classList.add("container")
     document.body.appendChild(message);
 }
 
@@ -16,6 +17,7 @@ function addMessage() {
     var message = document.createElement("DIV");
     message.innerHTML = document.getElementById("newMessage").value;
     message.classList.add("message")
+    message.classList.add("container");
     document.body.appendChild(message);
 }
 

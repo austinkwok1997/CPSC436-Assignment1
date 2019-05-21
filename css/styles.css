@@ -1,3 +1,93 @@
 form {
     display: inline;
 }
+
+span, a, button, div, h1, p{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+input {
+    height: 24px;
+    font-size: 18px;
+}
+
+button {
+    height: 32px;
+    width: 120px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 14px;
+}
+
+button.blue {
+    background-color: lightblue;
+}
+
+button.red {
+    background-color: lightcoral;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        text-align: center;
+    }
+    
+    #newMessage {
+        width: 40%;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+    
+    .message-box {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+.navbar {
+    font-size: 30px;
+    background-color: lightgray;
+}
+
+.navbar > span > a {
+    padding:15px;
+}
+
+.navbar > span > a:hover {
+    background-color: green;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.message-box {
+    font-size: 24px;
+}
+
+.message {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+}
