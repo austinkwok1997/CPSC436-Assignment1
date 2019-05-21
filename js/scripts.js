@@ -18,3 +18,7 @@ function addMessage() {
     message.classList.add("message")
     document.body.appendChild(message);
 }
+
+function removeMessages() {
+    [...document.getElementsByClassName("message")].map(n => n && n.remove());
+}
