@@ -8,16 +8,16 @@
 </head>
 
 <body>
-    <div>
-        <span><a href="index">HOME</a></span>
+    <div class="container navbar">
+        <span><a href="index.html">HOME</a></span>
         <span><a href="about.html">ABOUT</a></span>
     </div>
-    <div>
-        <span>Message: </span>
+    <div class="container message-box">
+        <span>New Message: </span>
         <form>
             <input type="text" id="newMessage" />
-            <button type="button" onclick="addMessage()">Add Message</button>
-            <button type="button" onclick="removeMessages()">Clear Messages</button>
+            <button type="button" onclick="addMessage()" class="blue">Add Message</button>
+            <button type="button" onclick="removeMessages()" class="red">Clear Messages</button>
         </form>
     </div>
     <script src="js/scripts.js"></script>
