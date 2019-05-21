@@ -2,10 +2,19 @@ var jsonString = '{"messages":["Lorem ipsum dolor sit amet, consectetur adipisci
 
 var jsonObj = JSON.parse(jsonString);
 
-var messages = "";
+var messageList = document.getElementById("messages");
 
 for (i = 0; i < jsonObj.messages.length; i++) {
-    messages += "<div><p>" + jsonObj.messages[i] + "</p><div>";
+    var message = document.createElement("DIV");
+    message.innerHTML = jsonObj.messages[i];
+    message.classList.add("message")
+    document.body.appendChild(message);
 }
 
-document.getElementById("messages").innerHTML = messages;
+
+function addMessage() {
+    var message = document.createElement("DIV");
+    message.innerHTML = document.getElementById("newMessage").value;
+    message.classList.add("message")
+    document.body.appendChild(message);
+}
